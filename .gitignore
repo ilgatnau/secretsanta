@@ -1,0 +1,7 @@
+/node_modules
+.idea/
+.c9/
+/data/
+/app/config/config.json
+.DS_Store
+public/css/app.css

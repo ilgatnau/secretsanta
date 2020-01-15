@@ -1,0 +1,11 @@
+<% layout('layout'); %>
+<% block('page', 'login'); -%>
+<h2>Admin login</h2>
+<form action="/login" method="post">
+  <label>Password</label>
+  <input type="password" name="password"/>
+  <% if (typeof error !== 'undefined') {%>
+  <p class="error"><%= error %></p>
+  <% }%>
+  <input type="submit" class="button" value="Login"/>
+</form>

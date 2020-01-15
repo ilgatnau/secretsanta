@@ -1,0 +1,17 @@
+<h1><%= name %>, este es el resultado del sorteo del amigo invisible</h1>
+<p>Te ha tocado ser el amigo invisible de <%= recipient %></p>
+<% if (colour || animal) { %>
+<ul>
+    <% if (colour) { %>
+    <li>Su color favorito es: <%= colour %></li>
+    <% } %>
+    <% if (animal) { %>
+    <li>Su animal favorito es: <%= animal %></li>
+    <% } %>
+</ul>
+<% } %>
+<% if (idea) { %>
+<p>Ha sugerido: <%= idea %> como sugerencia de regalo.</p>
+<% } %>
+<p>Recuerda el limite del precio del regalo es <%= spendLimit %></p>
+<p>Happy shopping, feliz Navidad!!!'</p>

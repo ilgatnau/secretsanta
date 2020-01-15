@@ -1,0 +1,18 @@
+{
+  "title": "Amigo invisible",
+  "admin-password": "asda",
+  "deadline": "18 Diciembre",
+  "spend-limit": "30 euros",
+
+  "email-server": {
+    "type": "sendgrid",
+    "from-address": "ilgatnau@gmail.com",
+
+    "options": {
+      "api-key": "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"
+    }
+  },
+
+  "cookie-secret": "xxxdsfsdfyyyzzz111",
+  "session-secret": "zzzxsdfsdfxxcccc222"
+}

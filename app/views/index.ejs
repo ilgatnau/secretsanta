@@ -1,0 +1,26 @@
+<% layout('layout'); %>
+<% block('page', 'signup-form'); -%>
+<h2>Bienvenido al <%= title %></h2>
+<form action="/save" method="post" class="grid-container">
+    <label for="name">Nombre</label>
+    <input id="name" type="text" name="name" required/>
+
+    <label>Email</label>
+    <input type="email" name="email" required/>
+
+    <label>Color favorito</label>
+    <input type="text" name="colour"/>
+
+    <label>Animal favorito</label>
+    <input type="text" name="animal"/>
+
+    <label>Sugerencia de regalo</label>
+    <input type="text" name="idea"/>
+
+    <input type="submit" class="button" value="Registrate!"/>
+</form>
+
+<div class="notes">
+    <p>La fecha limite es: <b><%= deadline %></b></p>
+    <p>El precio limite es: <b><%= spendLimit %></b></p>
+</div>

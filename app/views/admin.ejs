@@ -1,0 +1,27 @@
+<% layout('layout'); %>
+<% block('page', 'admin'); -%>
+<h2>People signed up</h2>
+
+<ul>
+<% for(var i = 0; i < subscribers.length; i++) {%>
+   <li><%= subscribers[i].name %> (<%= subscribers[i].email %>)</li>
+<% } %>
+</ul>
+
+<h2>Send out emails</h2>
+<form method="post" action="/admin/re-send">
+    <% if (alreadySent) { %>
+    <p>It looks like you already tried to send out emails</p>
+    <% } %>
+    <p>Click the following button to re-send emails!</p>
+
+    <input type="submit" class="button" value="Send" />
+</form>
+
+<% if (alreadySent) { %>
+<form method="post" action="/admin/create-send">
+    <p>This will re-shuffle the list of people and send new emails out</p>
+
+    <input type="submit" class="button" value="Regenerate & Send" />
+</form>
+<% } %>

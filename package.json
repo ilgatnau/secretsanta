@@ -1,0 +1,41 @@
+{
+  "name": "secret-santa",
+  "version": "3.2.0",
+  "description": "A web-based secret santa application to collect participants, shuffle and email each user with their chosen secret santa",
+  "main": "",
+  "scripts": {
+    "start": "npm run css && node index.js",
+    "css": "node-sass app/scss/styles.scss public/css/app.css --include-path node_modules/foundation-sites/scss --output-style compressed",
+    "test": "mocha app/**/*.test.js",
+    "lint": "eslint index.js app/**/*.js",
+    "init-config": "node index.js --init-config"
+  },
+  "author": {
+    "name": "Daniel Jackson",
+    "email": "daniel@cloakedninjas.co.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cloakedninjas/secret-santa.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^2.4.2",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.3",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "node-sass": "^4.13.0",
+    "nodemailer": "^6.4.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.10.0",
+    "mocha": "^5.2.0",
+    "sinon": "^7.5.0"
+  }
+}
