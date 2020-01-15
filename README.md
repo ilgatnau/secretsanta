@@ -75,3 +75,6 @@ All templates (including the email) are stored in `app/views`, and are fully cus
 - `test` runs tests
 - `lint` runs eslint over code
 - `css` build and minifies the CSS
+
+
+From forked repo
